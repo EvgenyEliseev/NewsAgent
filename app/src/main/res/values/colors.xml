@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b93e41</color>
+    <color name="colorPrimaryDark">#9b3235</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="windowBackground">#ffffff</color>
+
+    <color name="news_list_background">#efefef</color>
+    <color name="news_list_card_title">#000</color>
+    <color name="news_list_card_date">#a7a7a7</color>
+
+    <color name="news_story_title">#000</color>
+    <color name="news_story_date">#a7a7a7</color>
+    <color name="news_story_text">#000</color>
+    <color name="news_story_read_more">#7b75f5</color>
+    <color name="news_story_error">#737272</color>
+</resources>

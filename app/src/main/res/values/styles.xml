@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="news_list_card_title">
+        <item name="android:textColor">@color/news_list_card_title</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="news_list_card_date">
+        <item name="android:textColor">@color/news_list_card_date</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="news_story_title">
+        <item name="android:textColor">@color/news_story_title</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">@dimen/news_story_content_padding_vertical</item>
+    </style>
+
+    <style name="news_story_expanded_title">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+    <style name="news_story_date">
+        <item name="android:textColor">@color/news_story_date</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingBottom">@dimen/news_story_content_padding_vertical</item>
+    </style>
+
+    <style name="news_story_description">
+        <item name="android:textColor">@color/news_story_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingBottom">@dimen/news_story_content_padding_vertical</item>
+    </style>
+
+    <style name="news_story_read_more">
+        <item name="android:textColor">@color/news_story_read_more</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="news_story_load_error">
+        <item name="android:textColor">@color/news_story_error</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">@dimen/news_story_content_padding_vertical</item>
+    </style>
+
+</resources>

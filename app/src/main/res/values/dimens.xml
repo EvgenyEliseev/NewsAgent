@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="min_click_target">42dp</dimen>
+    <dimen name="news_list_padding_horizontal">4dp</dimen>
+
+    <dimen name="news_card_image_width">128dp</dimen>
+    <dimen name="news_card_image_height">96dp</dimen>
+    <dimen name="news_card_content_padding">8dp</dimen>
+    <dimen name="news_card_margin_vertical">4dp</dimen>
+    <dimen name="news_card_text_margin_horizontal">8dp</dimen>
+
+    <dimen name="news_story_padding_vertical">16dp</dimen>
+    <dimen name="news_story_padding_horizontal">16dp</dimen>
+    <dimen name="news_story_content_padding_vertical">8dp</dimen>
+</resources>

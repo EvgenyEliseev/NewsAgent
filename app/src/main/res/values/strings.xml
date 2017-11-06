@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BBC Top Stories</string>
+    <string name="read_more"><u>Read more</u></string>
+    <string name="article_load_error">This article is no longer available</string>
+
+    <string name="news_list_layout_manager">LinearLayoutManager</string>
+</resources>

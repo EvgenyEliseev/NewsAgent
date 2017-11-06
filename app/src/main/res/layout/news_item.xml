@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.eliseev.newsagent.util.DateFormatter"/>
+
+        <variable
+            name="article"
+            type="com.eliseev.newsagent.model.Article"/>
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/news_card_margin_vertical"
+        app:cardCornerRadius="0.1dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/news_card_image_width"
+                android:layout_height="@dimen/news_card_image_height"
+                android:scaleType="centerCrop"
+                android:src="@{article.image}"
+                android:contentDescription="@{article.title}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/news_list_card_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/news_card_text_margin_horizontal"
+                android:layout_marginEnd="@dimen/news_card_text_margin_horizontal"
+                android:text="@{article.title}"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/image"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do"/>
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/news_list_card_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/news_card_text_margin_horizontal"
+                android:text="@{DateFormatter.format(article.date)}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                tools:text="5 Nov 2017 19:43"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</layout>
