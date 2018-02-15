@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:contentScrim="?attr/colorPrimary"
-                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
                 app:expandedTitleTextAppearance="@style/news_story_expanded_title">
 
                 <ImageView
