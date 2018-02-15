@@ -32,12 +32,12 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class MockedTest {
 
-    @Suppress("unused")
-    @get:Rule
+    @Rule
+    @JvmField
     val daggerRule = MockWebServerRule()
 
-    @Suppress("MemberVisibilityCanPrivate")
-    @get:Rule
+    @Rule
+    @JvmField
     val activityRule = IntentsTestRule(NewsListActivity::class.java, true, false)
 
     private val webServer = MockWebServer()

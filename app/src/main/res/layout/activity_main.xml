@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="@color/news_list_background"
     tools:context="com.eliseev.newsagent.NewsListActivity">
 
     <android.support.design.widget.AppBarLayout

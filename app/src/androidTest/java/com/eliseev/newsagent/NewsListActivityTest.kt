@@ -44,18 +44,18 @@ import java.util.Date
 @RunWith(AndroidJUnit4::class)
 class NewsListActivityTest {
 
-    @Suppress("unused")
-    @get:Rule
+    @Rule
+    @JvmField
     val daggerRule = DaggerMock.rule<AppComponent>(AppModule()) {
         set { Injector.component = it }
     }
 
-    @Suppress("unused")
-    @get:Rule
+    @Rule
+    @JvmField
     val instantExecutor = InstantTaskExecutorRule()
 
-    @Suppress("MemberVisibilityCanPrivate")
-    @get:Rule
+    @Rule
+    @JvmField
     val activityRule = IntentsTestRule(NewsListActivity::class.java, true, false)
 
     @Mock

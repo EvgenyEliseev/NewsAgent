@@ -26,12 +26,12 @@ import java.util.Collections
 
 class NewsServiceTest {
 
-    @Suppress("unused")
-    @get:Rule
+    @Rule
+    @JvmField
     val mockitoRule: MockitoRule = MockitoJUnit.rule().strictness(Strictness.STRICT_STUBS)
 
-    @Suppress("unused")
-    @get:Rule
+    @Rule
+    @JvmField
     val instantExecutor = InstantTaskExecutorRule()
 
     @Mock
